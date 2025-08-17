@@ -2,6 +2,31 @@
 
 {% block title %}The Social Web Production Agency{% endblock %}
 
+{% block head %}
+<style>
+    #neuralNetCanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block;
+        background-color: #000;
+        opacity: 0.3;
+    }
+    main {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/neuralNetworkAnimation.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -39,6 +64,7 @@
             </div>
         </div>
     </div>
+    <canvas id="neuralNetCanvas"></canvas>
 </div>
 
 <!-- About Us Section -->

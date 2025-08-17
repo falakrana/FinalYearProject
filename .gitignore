@@ -24,7 +24,7 @@ var/
 venv/
 ENV/
 env/
-
+finalYearEnv/
 # Environment Variables
 .env
 
@@ -45,3 +45,4 @@ instance/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+.env
