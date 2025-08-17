@@ -1,48 +1,26 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+*.pyc
+*.pyd
+*.pyo
 
-# Virtual Environment
+# Virtual environment
 venv/
-ENV/
 env/
 finalYearEnv/
-# Environment Variables
-.env
 
-# IDE
+# Editor directories and files
 .idea/
-.vscode/
 *.swp
+*.bak
 *.swo
 
-# OS
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# Flask
-instance/
-.webassets-cache
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-.env
+# Packaged application
+*.egg
+*.egg-info
+dist/
+build/
