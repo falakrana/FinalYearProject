@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}The Social Web Production Agency{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #333 1px, transparent 1px); background-size: 50px 50px;"></div>
+    </div>
+    
+    <!-- Spacecraft Image -->
+    <div class="absolute left-8 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        <img src="/static/images/image3.jpeg" alt="Futuristic Spacecraft" class="w-96 h-auto spacecraft-float opacity-80">
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <!-- Updated hero text to match reference design -->
+            <h1 class="hero-text text-white mb-8 text-shadow">
+                The OpenCV<br>
+                production<br>
+                agency
+            </h1>
+            
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
+                We transform visionary concepts into extraordinary digital experiences. Our team crafts solutions that transcend expectations and redefine possibilities. Discover how we can elevate your vision to new heights.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="/projects" class="btn-primary inline-flex items-center">
+                    See more
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<div class="py-24 bg-gradient-to-b from-black to-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Team Image Placeholder -->
+            <div class="relative">
+                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/static/images/image5.png" 
+                         alt="About Us - Team" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- About Content -->
+            <div>
+                <h2 class="text-4xl font-light text-white mb-8">ABOUT US</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                    We are a dedicated team of developers driven by a shared passion for building
+                    technology that empowers people. With our innovative projects, we aim to
+                    bridge communication gaps and create solutions that truly make a difference.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    Our diverse skills and commitment to social impact help us create innovative solutions
+                    that transcend expectations and redefine possibilities in assistive technology.
+                </p>
+                <a href="/about" class="btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
